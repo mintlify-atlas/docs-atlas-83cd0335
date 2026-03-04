@@ -1,0 +1,176 @@
+{
+  "projectType": "framework",
+  "projectName": "Agent Swarm",
+  "projectDescription": "Multi-agent orchestration framework for Claude Code, Codex, Gemini CLI, and other AI coding assistants",
+  "theme": "aspen",
+  "primaryColor": "#6366F1",
+  "lightColor": "#818CF8",
+  "darkColor": "#4F46E5",
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "introduction",
+              "quickstart",
+              "installation"
+            ]
+          },
+          {
+            "group": "Core Concepts",
+            "pages": [
+              "concepts/architecture",
+              "concepts/lead-and-workers",
+              "concepts/task-lifecycle",
+              "concepts/agent-memory",
+              "concepts/agent-identity"
+            ]
+          },
+          {
+            "group": "Deployment",
+            "pages": [
+              "deployment/docker-compose",
+              "deployment/docker-workers",
+              "deployment/systemd",
+              "deployment/graceful-shutdown"
+            ]
+          },
+          {
+            "group": "Integrations",
+            "pages": [
+              "integrations/slack",
+              "integrations/github",
+              "integrations/agentmail",
+              "integrations/sentry"
+            ]
+          },
+          {
+            "group": "Configuration",
+            "pages": [
+              "configuration/environment-variables",
+              "configuration/system-prompts",
+              "configuration/startup-scripts"
+            ]
+          },
+          {
+            "group": "Advanced",
+            "pages": [
+              "advanced/hooks",
+              "advanced/service-registry",
+              "advanced/epics",
+              "advanced/scheduled-tasks"
+            ]
+          },
+          {
+            "group": "Development",
+            "pages": [
+              "development/contributing",
+              "development/testing",
+              "development/bun-rules"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "CLI Reference",
+        "groups": [
+          {
+            "group": "Commands",
+            "pages": [
+              "cli/overview",
+              "cli/setup",
+              "cli/mcp",
+              "cli/worker",
+              "cli/lead",
+              "cli/claude"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "MCP Tools",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "mcp/introduction"
+            ]
+          },
+          {
+            "group": "Core Tools",
+            "pages": [
+              "mcp/core/join-swarm",
+              "mcp/core/poll-task",
+              "mcp/core/send-task",
+              "mcp/core/get-tasks",
+              "mcp/core/store-progress",
+              "mcp/core/cancel-task"
+            ]
+          },
+          {
+            "group": "Messaging",
+            "pages": [
+              "mcp/messaging/channels",
+              "mcp/messaging/slack"
+            ]
+          },
+          {
+            "group": "Agent Management",
+            "pages": [
+              "mcp/agents/profile",
+              "mcp/agents/memory",
+              "mcp/agents/services"
+            ]
+          },
+          {
+            "group": "Task Management",
+            "pages": [
+              "mcp/tasks/epics",
+              "mcp/tasks/schedules"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Lead/Worker coordination architecture",
+    "Docker-isolated agent execution",
+    "Slack, GitHub, and email integrations",
+    "Compounding memory system with embeddings",
+    "Persistent agent identity and evolution",
+    "Task lifecycle with pause/resume",
+    "Service discovery and registry",
+    "Scheduled and recurring tasks",
+    "Real-time dashboard monitoring",
+    "Comprehensive MCP tool suite"
+  ],
+  "publicApiSurface": [
+    "join-swarm",
+    "poll-task",
+    "send-task",
+    "get-tasks",
+    "store-progress",
+    "cancel-task",
+    "post-message",
+    "read-messages",
+    "update-profile",
+    "memory-search",
+    "memory-get",
+    "inject-learning",
+    "register-service",
+    "list-services",
+    "create-epic",
+    "list-epics",
+    "create-schedule",
+    "list-schedules",
+    "slack-reply",
+    "slack-read",
+    "slack-post",
+    "inbox-delegate",
+    "task-action"
+  ]
+}
